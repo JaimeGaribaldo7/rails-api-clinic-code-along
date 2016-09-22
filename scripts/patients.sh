@@ -22,3 +22,8 @@ curl --include --request PATCH http://localhost:3000/patients/3 \
       "sickness": "Learns too fast"
     }
   }'
+
+# destroy
+
+curl --include --request DELETE http://localhost:3000/patients/1 \
+  --header "Content-Type: application/json"
